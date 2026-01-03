@@ -209,7 +209,7 @@ export const Transactions = () => {
 
       // 5. Reset & Refresh Data
       clearCart();
-      refreshData(); // Tarik data stok terbaru dari server (biar sinkron)
+      fetchData(); // Tarik data stok terbaru dari server (biar sinkron)
 
       toast.success('Pembayaran berhasil! Data tersimpan.');
 
@@ -227,7 +227,7 @@ export const Transactions = () => {
     }
 
     try {
-      const payload = {
+      refrest payload = {
         items: cart,
         payment_method: 'e-wallet',
         sub_method: 'qris',

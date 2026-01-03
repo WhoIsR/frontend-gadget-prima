@@ -227,7 +227,7 @@ export const Transactions = () => {
     }
 
     try {
-      const payload = {
+      refrest payload = {
         items: cart,
         payment_method: 'e-wallet',
         sub_method: 'qris',
